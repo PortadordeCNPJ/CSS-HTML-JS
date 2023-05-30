@@ -8,22 +8,28 @@
     </head>
 
     <body>
-        <h3>Programa de Boas Vindas!</h3>
+        <h3>Somatória de números inteiros </h3>
 
         <script language="javascript">
-            /* Objetivo: Escrever uma mensagem limitando-a em 10 vezes através de um contador 
-                            que será incrementado de mais 1 */
+            /* Objetivo: Desenvolver um programa em javaScript que faça a leitura de 2 números inteiros e apresente o 
+            resultado da soma entre eles. */
 
             /* Definicao das variaveis */
-            var js_contador = 1;
-            var data_atual = Date.now();
+            var js_n1;
+            var js_n2;
+            var soma;
 
-            /* Laço de Repetição Condicional - while */
-            while (js_contador <= 10000) {
-                document.write('<p>' + js_contador + '&ordf; ..........: ');
-                js_contador += 1;
-            }
-            console.log('Tempo passado: ', Date.now() - data_atual)
+            /* Entrada de Dados */
+            js_n1 = window.prompt('Informe o primeiro número: ', 'Digite aqui');
+            js_n2 = window.prompt('Informe o segundo número: ', 'Digite aqui');
+
+            /* Processamento de Dados */
+            js_soma = parseInt(js_n1) + parseInt(js_n2);
+
+            /* Saída de Dados */
+            document.write('O resultado é: ' , js_soma);
+
+
         </script>
     </body>
 
