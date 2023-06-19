@@ -41,7 +41,7 @@
         /* Saída de dados com consistencia de valores */
         document.write('<p><br> DEMONSTRATIVO PARA CÁLCULO DO SALÁRIO LÍQUIDO <br/>');
 
-        document.write('<p> Quantidade de horas travalhadas (135 a 180) => <br>' + js_qht + '</br>');
+        document.write('<p> Quantidade de horas trabalhadas (135 a 180) => <b>' + js_qht + '</b>');
         if (js_qht > 180) {
             document.write('...(<b> Valor Máximo Excedido! </b>)');
         }
@@ -57,7 +57,7 @@
             document.write('...(<b>Valor mínimo)');
         }
 
-        document.write('<p> Percentual de desconto INSS (5 a 15) =>' + js_inss + '</b>');
+        document.write('<p> Percentual de desconto INSS (5 a 15) => ' + js_inss + '</b>');
         if (js_inss > 15) {
             document.write('...(<b> Valor máximo excedido!)');
         }
